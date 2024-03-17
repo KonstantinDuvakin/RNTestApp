@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import React from 'react';
 
 export const Other = () => {
@@ -9,4 +9,4 @@ export const Other = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({});
