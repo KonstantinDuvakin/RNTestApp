@@ -12,12 +12,11 @@ import {
   IBSReactiiveRefProps,
 } from '../../components/BottomSheets/BSReactiive';
 import {SCREEN_HEIGHT} from '../../config/constants';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import { useNavigation } from '@react-navigation/native';
 import BSReactiiveHeader from '../../components/BottomSheets/BSReactiiveHeader';
 
 export default function BSReactiiveYT() {
   const ref = useRef<IBSReactiiveRefProps>(null);
+
   const onPress = useCallback(() => {
     const isActive = ref.current?.isActive();
     if (isActive) {

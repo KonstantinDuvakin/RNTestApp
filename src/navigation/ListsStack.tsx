@@ -3,11 +3,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {BottomSheets} from '../screens/BottomSheetStack/BottomSheets';
 import {BSStackEnum} from './navigationConfig';
 import BSReactiiveYT from '../screens/BottomSheetStack/BSReactiiveYT';
-import {BSStackParamsList} from './types';
+import {ListsStackParamsList} from './types';
 
-const Stack = createNativeStackNavigator<BSStackParamsList>();
+const Stack = createNativeStackNavigator<ListsStackParamsList>();
 
-export const BottomSheetStack = () => {
+export const ListsStack = () => {
   return (
     <Stack.Navigator initialRouteName={BSStackEnum.BOTTOM_SHEETS}>
       <Stack.Screen name={BSStackEnum.BOTTOM_SHEETS} component={BottomSheets} />

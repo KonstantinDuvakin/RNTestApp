@@ -5,5 +5,5 @@ export enum BSStackEnum {
 
 export enum MainStackEnum {
   BOTTOM_SHEET_STACK = 'BottomSheetStack',
-  OTHER = 'Other',
+  LISTS_STACK = 'ListsStack',
 }

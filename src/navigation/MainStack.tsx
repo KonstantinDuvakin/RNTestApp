@@ -2,10 +2,11 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {BottomSheetStack} from './BottomSheetsStack';
-import {Other} from '../screens/Other';
 import { MainStackEnum } from './navigationConfig';
+import { MainStackParamsList } from './types';
+import { ListsStack } from './ListsStack';
 
-const Drawer = createDrawerNavigator();
+const Drawer = createDrawerNavigator<MainStackParamsList>();
 
 export const MainStack = () => {
   return (
@@ -15,7 +16,11 @@ export const MainStack = () => {
         component={BottomSheetStack}
         options={{headerShown: false}}
       />
-      <Drawer.Screen name={MainStackEnum.OTHER} component={Other} />
+      <Drawer.Screen
+        name={MainStackEnum.LISTS_STACK}
+        component={ListsStack}
+        options={{ headerShown: false }}
+      />
     </Drawer.Navigator>
   );
 };
