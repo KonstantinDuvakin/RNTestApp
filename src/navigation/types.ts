@@ -1,5 +1,5 @@
 import {DrawerScreenProps} from '@react-navigation/drawer';
-import {BSStackEnum, MainStackEnum} from './navigationConfig';
+import {BSStackEnum, ListsStackEnum, MainStackEnum} from './navigationConfig';
 import {
   CompositeScreenProps,
   NavigatorScreenParams,
@@ -26,8 +26,8 @@ export type BSScreenProps<T extends keyof BSStackParamsList> =
   >;
 
 export type ListsStackParamsList = {
-  [BSStackEnum.BOTTOM_SHEETS]: undefined;
-  [BSStackEnum.BS_REACTIVE_YT]: undefined;
+  [ListsStackEnum.LISTS]: undefined;
+  [ListsStackEnum.ANIMATED_FL_REACTIIVE]: undefined;
 };
 
 export type ListsScreenProps<T extends keyof ListsStackParamsList> =

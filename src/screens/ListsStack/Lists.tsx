@@ -1,25 +1,25 @@
-import {Text, FlatList, StyleSheet, TouchableOpacity} from 'react-native';
+import {FlatList, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {BSStackEnum} from '../../navigation/navigationConfig';
-import {BSScreenProps} from '../../navigation/types';
+import {ListsScreenProps} from '../../navigation/types';
+import {ListsStackEnum} from '../../navigation/navigationConfig';
 
-const ITEM_DATA = ['BottomSheet Reactiive YT'];
+const ITEM_DATA = ['Animated Flatlist Reactiive YT'];
 
 const Item = ({item}: {item: string}) => {
   const navigation =
-    useNavigation<BSScreenProps<BSStackEnum.BOTTOM_SHEETS>['navigation']>();
+    useNavigation<ListsScreenProps<ListsStackEnum.LISTS>['navigation']>();
 
   return (
     <TouchableOpacity
       style={styles.containerItem}
-      onPress={() => navigation.navigate(BSStackEnum.BS_REACTIVE_YT)}>
+      onPress={() => navigation.navigate(ListsStackEnum.ANIMATED_FL_REACTIIVE)}>
       <Text>{item}</Text>
     </TouchableOpacity>
   );
 };
 
-export const BottomSheets = () => {
+export const Lists = () => {
   return (
     <FlatList
       data={ITEM_DATA}

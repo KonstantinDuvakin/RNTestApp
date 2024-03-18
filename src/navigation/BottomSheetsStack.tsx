@@ -2,8 +2,8 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {BottomSheets} from '../screens/BottomSheetStack/BottomSheets';
 import {BSStackEnum} from './navigationConfig';
-import BSReactiiveYT from '../screens/BottomSheetStack/BSReactiiveYT';
 import {BSStackParamsList} from './types';
+import {BSReactiiveYT} from '../screens/BottomSheetStack/BSReactiiveYT';
 
 const Stack = createNativeStackNavigator<BSStackParamsList>();
 

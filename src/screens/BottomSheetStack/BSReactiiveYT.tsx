@@ -14,7 +14,7 @@ import {
 import {SCREEN_HEIGHT} from '../../config/constants';
 import BSReactiiveHeader from '../../components/BottomSheets/BSReactiiveHeader';
 
-export default function BSReactiiveYT() {
+export const BSReactiiveYT = () => {
   const ref = useRef<IBSReactiiveRefProps>(null);
 
   const onPress = useCallback(() => {
@@ -48,7 +48,7 @@ export default function BSReactiiveYT() {
       </BSReactiive>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
