@@ -1,5 +1,10 @@
 import {DrawerScreenProps} from '@react-navigation/drawer';
-import {BSStackEnum, ListsStackEnum, MainStackEnum} from './navigationConfig';
+import {
+  BSStackEnum,
+  DropdownsStackEnum,
+  ListsStackEnum,
+  MainStackEnum,
+} from './navigationConfig';
 import {
   CompositeScreenProps,
   NavigatorScreenParams,
@@ -7,8 +12,9 @@ import {
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 export type MainStackParamsList = {
-  [MainStackEnum.BOTTOM_SHEET_STACK]: NavigatorScreenParams<BSStackParamsList>;
+  [MainStackEnum.BOTTOM_SHEETS_STACK]: NavigatorScreenParams<BSStackParamsList>;
   [MainStackEnum.LISTS_STACK]: NavigatorScreenParams<ListsStackParamsList>;
+  [MainStackEnum.DROPDOWNS_STACK]: NavigatorScreenParams<DropdownsStackParamsList>;
 };
 
 export type MainStackScreenProps<T extends keyof MainStackParamsList> =
@@ -33,6 +39,17 @@ export type ListsStackParamsList = {
 export type ListsScreenProps<T extends keyof ListsStackParamsList> =
   CompositeScreenProps<
     NativeStackScreenProps<ListsStackParamsList, T>,
+    MainStackScreenProps<keyof MainStackParamsList>
+  >;
+
+export type DropdownsStackParamsList = {
+  [DropdownsStackEnum.DROPDOWNS]: undefined;
+  [DropdownsStackEnum.DD_MENU_ANIMATION_REACTIIVE]: undefined;
+};
+
+export type DropdownsScreenProps<T extends keyof DropdownsStackParamsList> =
+  CompositeScreenProps<
+    NativeStackScreenProps<DropdownsStackParamsList, T>,
     MainStackScreenProps<keyof MainStackParamsList>
   >;
 

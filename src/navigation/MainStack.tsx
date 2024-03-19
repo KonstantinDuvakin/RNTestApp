@@ -5,21 +5,24 @@ import {BottomSheetStack} from './BottomSheetsStack';
 import { MainStackEnum } from './navigationConfig';
 import { MainStackParamsList } from './types';
 import { ListsStack } from './ListsStack';
+import { DropdownsStack } from './DropdownsStack';
 
 const Drawer = createDrawerNavigator<MainStackParamsList>();
 
 export const MainStack = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator screenOptions={{ headerShown: false }}>
       <Drawer.Screen
-        name={MainStackEnum.BOTTOM_SHEET_STACK}
+        name={MainStackEnum.BOTTOM_SHEETS_STACK}
         component={BottomSheetStack}
-        options={{headerShown: false}}
       />
       <Drawer.Screen
         name={MainStackEnum.LISTS_STACK}
         component={ListsStack}
-        options={{ headerShown: false }}
+      />
+      <Drawer.Screen
+        name={MainStackEnum.DROPDOWNS_STACK}
+        component={DropdownsStack}
       />
     </Drawer.Navigator>
   );

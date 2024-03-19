@@ -1,16 +1,17 @@
 import {FlatList, StyleSheet} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {ListsScreenProps} from '../../navigation/types';
-import {ListsStackEnum} from '../../navigation/navigationConfig';
 import {FLItem} from '../../components/FLItem';
+import {DropdownsScreenProps} from '../../navigation/types';
+import {DropdownsStackEnum} from '../../navigation/navigationConfig';
 
-const ITEM_DATA = ['Animated Flatlist Reactiive YT'];
+const ITEM_DATA = ['Dropdown menu Animation Reactiive YT'];
 
-export const Lists = () => {
+export const Dropdowns = () => {
   const navigation =
-    useNavigation<ListsScreenProps<ListsStackEnum.LISTS>['navigation']>();
-
+    useNavigation<
+      DropdownsScreenProps<DropdownsStackEnum.DROPDOWNS>['navigation']
+    >();
   return (
     <FlatList
       data={ITEM_DATA}
@@ -18,7 +19,7 @@ export const Lists = () => {
         <FLItem
           item={item}
           onPress={() =>
-            navigation.navigate(ListsStackEnum.ANIMATED_FL_REACTIIVE)
+            navigation.navigate(DropdownsStackEnum.DD_MENU_ANIMATION_REACTIIVE)
           }
         />
       )}

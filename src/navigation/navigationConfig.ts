@@ -1,6 +1,7 @@
 export enum MainStackEnum {
-  BOTTOM_SHEET_STACK = 'BottomSheetStack',
+  BOTTOM_SHEETS_STACK = 'BottomSheetsStack',
   LISTS_STACK = 'ListsStack',
+  DROPDOWNS_STACK = 'DropdownsStack',
 }
 
 export enum BSStackEnum {
@@ -11,4 +12,9 @@ export enum BSStackEnum {
 export enum ListsStackEnum {
   LISTS = 'Lists',
   ANIMATED_FL_REACTIIVE = 'AnimatedFLReactiive',
+}
+
+export enum DropdownsStackEnum {
+  DROPDOWNS = 'Dropdowns',
+  DD_MENU_ANIMATION_REACTIIVE = 'DDMenuAnimationReactiive',
 }
