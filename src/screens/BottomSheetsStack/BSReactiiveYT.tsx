@@ -12,7 +12,7 @@ import {
   IBSReactiiveRefProps,
 } from '../../components/BottomSheets/BSReactiive';
 import {SCREEN_HEIGHT} from '../../config/constants';
-import BSReactiiveHeader from '../../components/BottomSheets/BSReactiiveHeader';
+import CustomHeader from '../../components/CustomHeader';
 
 export const BSReactiiveYT = () => {
   const ref = useRef<IBSReactiiveRefProps>(null);
@@ -29,7 +29,7 @@ export const BSReactiiveYT = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle={'light-content'} />
-      <BSReactiiveHeader />
+      <CustomHeader />
       <TouchableOpacity style={styles.button} onPress={onPress} />
       <BSReactiive ref={ref}>
         <ScrollView style={styles.svStyle}>

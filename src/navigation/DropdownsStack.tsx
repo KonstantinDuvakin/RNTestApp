@@ -14,6 +14,7 @@ export const DropdownsStack = () => {
       <Stack.Screen
         name={DropdownsStackEnum.DD_MENU_ANIMATION_REACTIIVE}
         component={DDMenuAnimationReactiive}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );

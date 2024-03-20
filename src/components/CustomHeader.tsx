@@ -3,7 +3,7 @@ import React from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
 
-export default function BSReactiiveHeader() {
+export default function CustomHeader() {
   const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
 
