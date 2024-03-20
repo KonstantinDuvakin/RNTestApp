@@ -1,6 +1,7 @@
 import {DrawerScreenProps} from '@react-navigation/drawer';
 import {
   BSStackEnum,
+  CarouselsStackEnum,
   DropdownsStackEnum,
   ListsStackEnum,
   MainStackEnum,
@@ -15,6 +16,7 @@ export type MainStackParamsList = {
   [MainStackEnum.BOTTOM_SHEETS_STACK]: NavigatorScreenParams<BSStackParamsList>;
   [MainStackEnum.LISTS_STACK]: NavigatorScreenParams<ListsStackParamsList>;
   [MainStackEnum.DROPDOWNS_STACK]: NavigatorScreenParams<DropdownsStackParamsList>;
+  [MainStackEnum.CAROUSELS_STACK]: NavigatorScreenParams<CarouselsStackParamsList>;
 };
 
 export type MainStackScreenProps<T extends keyof MainStackParamsList> =
@@ -22,7 +24,7 @@ export type MainStackScreenProps<T extends keyof MainStackParamsList> =
 
 export type BSStackParamsList = {
   [BSStackEnum.BOTTOM_SHEETS]: undefined;
-  [BSStackEnum.BS_REACTIVE_YT]: undefined;
+  [BSStackEnum.BS_REACTIVE]: undefined;
 };
 
 export type BSScreenProps<T extends keyof BSStackParamsList> =
@@ -50,6 +52,17 @@ export type DropdownsStackParamsList = {
 export type DropdownsScreenProps<T extends keyof DropdownsStackParamsList> =
   CompositeScreenProps<
     NativeStackScreenProps<DropdownsStackParamsList, T>,
+    MainStackScreenProps<keyof MainStackParamsList>
+  >;
+
+export type CarouselsStackParamsList = {
+  [CarouselsStackEnum.CAROUSELS]: undefined;
+  [CarouselsStackEnum.CIRCULAR_CAROUSEL_REACTIIVE]: undefined;
+};
+
+export type CarouselsScreenProps<T extends keyof CarouselsStackParamsList> =
+  CompositeScreenProps<
+    NativeStackScreenProps<CarouselsStackParamsList, T>,
     MainStackScreenProps<keyof MainStackParamsList>
   >;
 

@@ -1,22 +1,26 @@
 import {FlatList, StyleSheet} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {BSStackEnum} from '../../navigation/navigationConfig';
-import {BSScreenProps} from '../../navigation/types';
 import {FLItem} from '../../components/FLItem';
+import {CarouselsScreenProps} from '../../navigation/types';
+import {CarouselsStackEnum} from '../../navigation/navigationConfig';
 
-const ITEM_DATA = ['BottomSheet Reactiive YT'];
+const ITEM_DATA = ['Circular Carousel Animation Reactiive'];
 
-export const BottomSheets = () => {
+export const Carousels = () => {
   const navigation =
-    useNavigation<BSScreenProps<BSStackEnum.BOTTOM_SHEETS>['navigation']>();
+    useNavigation<
+      CarouselsScreenProps<CarouselsStackEnum.CAROUSELS>['navigation']
+    >();
   return (
     <FlatList
       data={ITEM_DATA}
       renderItem={({item}) => (
         <FLItem
           item={item}
-          onPress={() => navigation.navigate(BSStackEnum.BS_REACTIVE)}
+          onPress={() =>
+            navigation.navigate(CarouselsStackEnum.CIRCULAR_CAROUSEL_REACTIIVE)
+          }
         />
       )}
       style={styles.flStyle}

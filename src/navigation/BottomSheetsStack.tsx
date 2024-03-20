@@ -12,7 +12,7 @@ export const BottomSheetStack = () => {
     <Stack.Navigator initialRouteName={BSStackEnum.BOTTOM_SHEETS}>
       <Stack.Screen name={BSStackEnum.BOTTOM_SHEETS} component={BottomSheets} />
       <Stack.Screen
-        name={BSStackEnum.BS_REACTIVE_YT}
+        name={BSStackEnum.BS_REACTIVE}
         component={BSReactiiveYT}
         options={{headerShown: false}}
       />

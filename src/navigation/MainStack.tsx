@@ -6,6 +6,7 @@ import { MainStackEnum } from './navigationConfig';
 import { MainStackParamsList } from './types';
 import { ListsStack } from './ListsStack';
 import { DropdownsStack } from './DropdownsStack';
+import { CarouselsStack } from './CarouselsStack';
 
 const Drawer = createDrawerNavigator<MainStackParamsList>();
 
@@ -23,6 +24,10 @@ export const MainStack = () => {
       <Drawer.Screen
         name={MainStackEnum.DROPDOWNS_STACK}
         component={DropdownsStack}
+      />
+      <Drawer.Screen
+        name={MainStackEnum.CAROUSELS_STACK}
+        component={CarouselsStack}
       />
     </Drawer.Navigator>
   );
