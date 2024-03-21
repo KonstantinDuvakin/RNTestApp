@@ -3,6 +3,7 @@ export enum MainStackEnum {
   LISTS_STACK = 'ListsStack',
   DROPDOWNS_STACK = 'DropdownsStack',
   CAROUSELS_STACK = 'CarouselsStack',
+  ONBOARDINGS_STACK = 'OnboardingsStack',
 }
 
 export enum BSStackEnum {
@@ -23,4 +24,9 @@ export enum DropdownsStackEnum {
 export enum CarouselsStackEnum {
   CAROUSELS = 'Carousels',
   CIRCULAR_CAROUSEL_REACTIIVE = 'CircularCarouselReactiive',
+}
+
+export enum OnboardingsStackEnum {
+  ONBOARDINGS = 'Onboardings',
+  ONBOARDING_RAKHA_WIBOWO = 'OnboardingRakhaWibowo',
 }

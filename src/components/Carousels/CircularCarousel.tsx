@@ -1,7 +1,10 @@
 import {ImageSourcePropType, StyleSheet} from 'react-native';
 import React from 'react';
 import {FlatList} from 'react-native-gesture-handler';
-import {CAROUSEL_LIST_ITEM_WIDTH, CircularCarouselItem} from './CircularCarouselItem';
+import {
+  CAROUSEL_LIST_ITEM_WIDTH,
+  CircularCarouselItem,
+} from './CircularCarouselItem';
 import {useSharedValue} from 'react-native-reanimated';
 
 type CircularCarouselProps = {

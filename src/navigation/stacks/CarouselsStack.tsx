@@ -1,9 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {CarouselsStackEnum} from './navigationConfig';
-import {CarouselsStackParamsList} from './types';
-import {CircularCarouselReactiive} from '../screens/CarouselStack/CircularCarouselReactiive';
-import {Carousels} from '../screens/CarouselStack/Carousels';
+import {CarouselsStackEnum} from '../navigationConfig';
+import {CarouselsStackParamsList} from '../types';
+import {CircularCarouselReactiive} from '../../screens/CarouselsStack/CircularCarouselReactiive';
+import {Carousels} from '../../screens/CarouselsStack/Carousels';
 
 const Stack = createNativeStackNavigator<CarouselsStackParamsList>();
 

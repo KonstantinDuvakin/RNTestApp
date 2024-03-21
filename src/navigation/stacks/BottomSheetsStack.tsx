@@ -1,9 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {BottomSheets} from '../screens/BottomSheetsStack/BottomSheets';
-import {BSStackEnum} from './navigationConfig';
-import {BSStackParamsList} from './types';
-import {BSReactiiveYT} from '../screens/BottomSheetsStack/BSReactiiveYT';
+import {BottomSheets} from '../../screens/BottomSheetsStack/BottomSheets';
+import {BSStackEnum} from '../navigationConfig';
+import {BSStackParamsList} from '../types';
+import {BSReactiiveYT} from '../../screens/BottomSheetsStack/BSReactiiveYT';
 
 const Stack = createNativeStackNavigator<BSStackParamsList>();
 

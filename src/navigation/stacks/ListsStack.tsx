@@ -1,9 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {ListsStackEnum} from './navigationConfig';
-import {ListsStackParamsList} from './types';
-import {Lists} from '../screens/ListsStack/Lists';
-import {AnimatedFLReactiive} from '../screens/ListsStack/AnimatedFLReactiive';
+import {ListsStackEnum} from '../navigationConfig';
+import {ListsStackParamsList} from '../types';
+import {Lists} from '../../screens/ListsStack/Lists';
+import {AnimatedFLReactiive} from '../../screens/ListsStack/AnimatedFLReactiive';
 
 const Stack = createNativeStackNavigator<ListsStackParamsList>();
 

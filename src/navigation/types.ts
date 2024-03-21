@@ -5,6 +5,7 @@ import {
   DropdownsStackEnum,
   ListsStackEnum,
   MainStackEnum,
+  OnboardingsStackEnum,
 } from './navigationConfig';
 import {
   CompositeScreenProps,
@@ -17,6 +18,7 @@ export type MainStackParamsList = {
   [MainStackEnum.LISTS_STACK]: NavigatorScreenParams<ListsStackParamsList>;
   [MainStackEnum.DROPDOWNS_STACK]: NavigatorScreenParams<DropdownsStackParamsList>;
   [MainStackEnum.CAROUSELS_STACK]: NavigatorScreenParams<CarouselsStackParamsList>;
+  [MainStackEnum.ONBOARDINGS_STACK]: NavigatorScreenParams<OnboardingsStackParamsList>;
 };
 
 export type MainStackScreenProps<T extends keyof MainStackParamsList> =
@@ -63,6 +65,17 @@ export type CarouselsStackParamsList = {
 export type CarouselsScreenProps<T extends keyof CarouselsStackParamsList> =
   CompositeScreenProps<
     NativeStackScreenProps<CarouselsStackParamsList, T>,
+    MainStackScreenProps<keyof MainStackParamsList>
+  >;
+
+export type OnboardingsStackParamsList = {
+  [OnboardingsStackEnum.ONBOARDINGS]: undefined;
+  [OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO]: undefined;
+};
+
+export type OnboardingsScreenProps<T extends keyof OnboardingsStackParamsList> =
+  CompositeScreenProps<
+    NativeStackScreenProps<OnboardingsStackParamsList, T>,
     MainStackScreenProps<keyof MainStackParamsList>
   >;
 

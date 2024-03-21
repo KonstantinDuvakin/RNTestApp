@@ -1,9 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {DropdownsStackEnum} from './navigationConfig';
-import {DropdownsStackParamsList} from './types';
-import {Dropdowns} from '../screens/DropdownsStack/Dropdowns';
-import {DDMenuAnimationReactiive} from '../screens/DropdownsStack/DDMenuAnimationReactiive';
+import {DropdownsStackEnum} from '../navigationConfig';
+import {DropdownsStackParamsList} from '../types';
+import {Dropdowns} from '../../screens/DropdownsStack/Dropdowns';
+import {DDMenuAnimationReactiive} from '../../screens/DropdownsStack/DDMenuAnimationReactiive';
 
 const Stack = createNativeStackNavigator<DropdownsStackParamsList>();
 
