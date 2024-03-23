@@ -17,6 +17,7 @@ export const OnboardingsStack = () => {
       <Stack.Screen
         name={OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO}
         component={OnboardingRakhaWibowo}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
