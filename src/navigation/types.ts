@@ -71,6 +71,7 @@ export type CarouselsScreenProps<T extends keyof CarouselsStackParamsList> =
 export type OnboardingsStackParamsList = {
   [OnboardingsStackEnum.ONBOARDINGS]: undefined;
   [OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO]: undefined;
+  [OnboardingsStackEnum.ONBOARDING_MASKING_WIBOWO]: undefined;
 };
 
 export type OnboardingsScreenProps<T extends keyof OnboardingsStackParamsList> =

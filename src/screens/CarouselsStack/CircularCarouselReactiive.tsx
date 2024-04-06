@@ -3,16 +3,16 @@ import React from 'react';
 import {CircularCarousel} from '../../components/Carousels/CircularCarousel';
 
 const DATA = [
-  require('../../assets/images/bear.jpeg'),
-  require('../../assets/images/panda.jpeg'),
-  require('../../assets/images/cat.jpeg'),
-  require('../../assets/images/deer.jpeg'),
-  require('../../assets/images/dog.jpeg'),
-  require('../../assets/images/hedgehog.jpeg'),
-  require('../../assets/images/koala.jpeg'),
-  require('../../assets/images/moose.jpeg'),
-  require('../../assets/images/parrot.jpeg'),
-  require('../../assets/images/rabbit.jpeg'),
+  require('../../assets/images/CircularCarousel/bear.jpeg'),
+  require('../../assets/images/CircularCarousel/panda.jpeg'),
+  require('../../assets/images/CircularCarousel/cat.jpeg'),
+  require('../../assets/images/CircularCarousel/deer.jpeg'),
+  require('../../assets/images/CircularCarousel/dog.jpeg'),
+  require('../../assets/images/CircularCarousel/hedgehog.jpeg'),
+  require('../../assets/images/CircularCarousel/koala.jpeg'),
+  require('../../assets/images/CircularCarousel/moose.jpeg'),
+  require('../../assets/images/CircularCarousel/parrot.jpeg'),
+  require('../../assets/images/CircularCarousel/rabbit.jpeg'),
 ]
 
 export const CircularCarouselReactiive = () => {

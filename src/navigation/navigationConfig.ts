@@ -29,4 +29,5 @@ export enum CarouselsStackEnum {
 export enum OnboardingsStackEnum {
   ONBOARDINGS = 'Onboardings',
   ONBOARDING_RAKHA_WIBOWO = 'OnboardingRakhaWibowo',
+  ONBOARDING_MASKING_WIBOWO = 'OnboardingMaskingWibowo',
 }

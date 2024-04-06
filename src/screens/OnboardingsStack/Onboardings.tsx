@@ -5,7 +5,16 @@ import {FLItem} from '../../components/FLItem';
 import {OnboardingsScreenProps} from '../../navigation/types';
 import {OnboardingsStackEnum} from '../../navigation/navigationConfig';
 
-const ITEM_DATA = ['Onboarding Rakha Wibowo'];
+const ITEM_DATA = [
+  {
+    name: 'Onboarding Rakha Wibowo',
+    to: OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO,
+  },
+  {
+    name: 'Onboarding Masking Wibowo',
+    to: OnboardingsStackEnum.ONBOARDING_MASKING_WIBOWO,
+  },
+];
 
 export const Onboardings = () => {
   const navigation =
@@ -17,10 +26,9 @@ export const Onboardings = () => {
       data={ITEM_DATA}
       renderItem={({item}) => (
         <FLItem
-          item={item}
-          onPress={() =>
-            navigation.navigate(OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO)
-          }
+          key={item.name}
+          item={item.name}
+          onPress={() => navigation.navigate(item.to)}
         />
       )}
       style={styles.flStyle}

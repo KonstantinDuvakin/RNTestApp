@@ -1,8 +1,8 @@
 import {StyleSheet, View} from 'react-native';
 import React, {useState} from 'react';
-import {OnboardingScreen} from '../../components/Onboardings/OnboardingScreen';
+import {OnboardingScreen} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingScreen';
 import {SCREEN_WIDTH} from '../../config/constants';
-import {OnboardingButton} from '../../components/Onboardings/OnboardingButton';
+import {OnboardingButton} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingButton';
 import Animated, {
   clamp,
   runOnJS,
@@ -11,8 +11,8 @@ import Animated, {
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
-import {OnboardingBackground} from '../../components/Onboardings/OnboardingBackground';
-import {OnboardingCircle} from '../../components/Onboardings/OnboardingCircle';
+import {OnboardingBackground} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingBackground';
+import {OnboardingCircle} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingCircle';
 import {Gesture, GestureDetector} from 'react-native-gesture-handler';
 
 export type OnboardingDataType = {

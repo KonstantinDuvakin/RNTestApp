@@ -1,7 +1,7 @@
 import {Pressable, StyleSheet} from 'react-native';
 import React from 'react';
-import {OnboardingDataType} from '../../screens/OnboardingsStack/OnboardingRakhaWibowo';
-import Arrow from './../../assets/svg/Arrow.svg';
+import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRakhaWibowo';
+import Arrow from './../../../assets/svg/Arrow.svg';
 import Animated, {
   Extrapolation,
   SharedValue,
@@ -10,7 +10,7 @@ import Animated, {
   useAnimatedStyle,
   withTiming,
 } from 'react-native-reanimated';
-import {SCREEN_WIDTH} from '../../config/constants';
+import {SCREEN_WIDTH} from '../../../config/constants';
 
 type ButtonProps = {
   data: OnboardingDataType[];

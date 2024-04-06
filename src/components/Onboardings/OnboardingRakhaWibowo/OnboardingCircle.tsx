@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {OnboardingDataType} from '../../screens/OnboardingsStack/OnboardingRakhaWibowo';
+import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRakhaWibowo';
 import Animated, {
   Extrapolation,
   SharedValue,
@@ -8,7 +8,7 @@ import Animated, {
   interpolateColor,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import {SCREEN_WIDTH} from '../../config/constants';
+import {SCREEN_WIDTH} from '../../../config/constants';
 
 type OnboardingCircleProps = {
   data: OnboardingDataType[];

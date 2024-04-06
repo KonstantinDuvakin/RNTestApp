@@ -1,12 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {OnboardingDataType} from '../../screens/OnboardingsStack/OnboardingRakhaWibowo';
+import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRakhaWibowo';
 import Animated, {
   SharedValue,
   interpolateColor,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import {SCREEN_WIDTH} from '../../config/constants';
+import {SCREEN_WIDTH} from '../../../config/constants';
 
 type OnboardingBackgroundProps = {
   data: OnboardingDataType[];
