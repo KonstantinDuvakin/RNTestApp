@@ -6,6 +6,7 @@ import {
   ListsStackEnum,
   MainStackEnum,
   OnboardingsStackEnum,
+  TopTabsStackEnum,
 } from './navigationConfig';
 import {
   CompositeScreenProps,
@@ -19,6 +20,7 @@ export type MainStackParamsList = {
   [MainStackEnum.DROPDOWNS_STACK]: NavigatorScreenParams<DropdownsStackParamsList>;
   [MainStackEnum.CAROUSELS_STACK]: NavigatorScreenParams<CarouselsStackParamsList>;
   [MainStackEnum.ONBOARDINGS_STACK]: NavigatorScreenParams<OnboardingsStackParamsList>;
+  [MainStackEnum.TOP_TABS_STACK]: NavigatorScreenParams<TopTabsStackParamsList>;
 };
 
 export type MainStackScreenProps<T extends keyof MainStackParamsList> =
@@ -77,6 +79,17 @@ export type OnboardingsStackParamsList = {
 export type OnboardingsScreenProps<T extends keyof OnboardingsStackParamsList> =
   CompositeScreenProps<
     NativeStackScreenProps<OnboardingsStackParamsList, T>,
+    MainStackScreenProps<keyof MainStackParamsList>
+  >;
+
+export type TopTabsStackParamsList = {
+  [TopTabsStackEnum.TOP_TABS]: undefined;
+  [TopTabsStackEnum.ANIMATED_TOP_TABS]: undefined;
+};
+
+export type TopTabsScreenProps<T extends keyof TopTabsStackParamsList> =
+  CompositeScreenProps<
+    NativeStackScreenProps<TopTabsStackParamsList, T>,
     MainStackScreenProps<keyof MainStackParamsList>
   >;
 

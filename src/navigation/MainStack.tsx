@@ -3,7 +3,7 @@ import React from 'react';
 import {DrawerNavigationOptions, createDrawerNavigator} from '@react-navigation/drawer';
 import { MainStackEnum } from './navigationConfig';
 import { MainStackParamsList } from './types';
-import { BottomSheetStack, CarouselsStack, DropdownsStack, ListsStack, OnboardingsStack } from './stacks';
+import { BottomSheetStack, CarouselsStack, DropdownsStack, ListsStack, OnboardingsStack, TopTabsStack } from './stacks';
 
 const Drawer = createDrawerNavigator<MainStackParamsList>();
 
@@ -16,7 +16,7 @@ export const MainStack = () => {
   return (
     <Drawer.Navigator
       screenOptions={SCREEN_OPTIONS}
-      initialRouteName={MainStackEnum.ONBOARDINGS_STACK}>
+      initialRouteName={MainStackEnum.TOP_TABS_STACK}>
       <Drawer.Screen
         name={MainStackEnum.BOTTOM_SHEETS_STACK}
         component={BottomSheetStack}
@@ -36,6 +36,10 @@ export const MainStack = () => {
       <Drawer.Screen
         name={MainStackEnum.ONBOARDINGS_STACK}
         component={OnboardingsStack}
+      />
+      <Drawer.Screen
+        name={MainStackEnum.TOP_TABS_STACK}
+        component={TopTabsStack}
       />
     </Drawer.Navigator>
   );

@@ -4,6 +4,7 @@ export enum MainStackEnum {
   DROPDOWNS_STACK = 'DropdownsStack',
   CAROUSELS_STACK = 'CarouselsStack',
   ONBOARDINGS_STACK = 'OnboardingsStack',
+  TOP_TABS_STACK = 'TopTabsStack',
 }
 
 export enum BSStackEnum {
@@ -30,4 +31,9 @@ export enum OnboardingsStackEnum {
   ONBOARDINGS = 'Onboardings',
   ONBOARDING_RAKHA_WIBOWO = 'OnboardingRakhaWibowo',
   ONBOARDING_MASKING_WIBOWO = 'OnboardingMaskingWibowo',
+}
+
+export enum TopTabsStackEnum {
+  TOP_TABS = 'TopTabs',
+  ANIMATED_TOP_TABS = 'AnimatedTopTabs',
 }
