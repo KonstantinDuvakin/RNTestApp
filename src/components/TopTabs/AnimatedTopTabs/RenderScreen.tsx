@@ -17,8 +17,13 @@ export const RenderScreen = ({item}: RenderScreenProps) => {
 };
 
 const styles = StyleSheet.create({
-  container: {width: SCREEN_WIDTH, height: SCREEN_HEIGHT},
-  image: {flex: 1},
+  container: {
+    width: SCREEN_WIDTH,
+    height: SCREEN_HEIGHT,
+  },
+  image: {
+    flex: 1,
+  },
   backdrop: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: 'rgba(0,0,0,0.3)',
