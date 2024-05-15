@@ -1,8 +1,8 @@
 import {StyleSheet, View} from 'react-native';
 import React, {useState} from 'react';
-import {OnboardingScreen} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingScreen';
+import {OnboardingScreen} from '../../components/Onboardings/OnboardingRW/OnboardingScreen';
 import {SCREEN_WIDTH} from '../../config/constants';
-import {OnboardingButton} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingButton';
+import {OnboardingButton} from '../../components/Onboardings/OnboardingRW/OnboardingButton';
 import Animated, {
   clamp,
   runOnJS,
@@ -11,8 +11,8 @@ import Animated, {
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
-import {OnboardingBackground} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingBackground';
-import {OnboardingCircle} from '../../components/Onboardings/OnboardingRakhaWibowo/OnboardingCircle';
+import {OnboardingBackground} from '../../components/Onboardings/OnboardingRW/OnboardingBackground';
+import {OnboardingCircle} from '../../components/Onboardings/OnboardingRW/OnboardingCircle';
 import {Gesture, GestureDetector} from 'react-native-gesture-handler';
 
 export type OnboardingDataType = {
@@ -47,7 +47,7 @@ const DATA: OnboardingDataType[] = [
   },
 ];
 
-export const OnboardingRakhaWibowo = () => {
+export const OnboardingRW = () => {
   const x = useSharedValue(0);
   const context = useSharedValue(0);
   const [currentIndex, setCurrentIndex] = useState(0);

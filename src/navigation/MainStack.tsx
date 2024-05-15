@@ -4,19 +4,20 @@ import {DrawerNavigationOptions, createDrawerNavigator} from '@react-navigation/
 import { MainStackEnum } from './navigationConfig';
 import { MainStackParamsList } from './types';
 import { BottomSheetStack, CarouselsStack, DropdownsStack, ListsStack, OnboardingsStack, TopTabsStack } from './stacks';
+import { CustomDrawerMenusStack } from './stacks/CustomDrawerMenusStack.tsx';
 
 const Drawer = createDrawerNavigator<MainStackParamsList>();
 
 const SCREEN_OPTIONS: DrawerNavigationOptions = {
   headerShown: false,
   drawerType: 'front',
-}
+};
 
 export const MainStack = () => {
   return (
     <Drawer.Navigator
       screenOptions={SCREEN_OPTIONS}
-      initialRouteName={MainStackEnum.TOP_TABS_STACK}>
+      initialRouteName={MainStackEnum.CUSTOM_DRAWER_MENUS_STACK}>
       <Drawer.Screen
         name={MainStackEnum.BOTTOM_SHEETS_STACK}
         component={BottomSheetStack}
@@ -40,6 +41,13 @@ export const MainStack = () => {
       <Drawer.Screen
         name={MainStackEnum.TOP_TABS_STACK}
         component={TopTabsStack}
+      />
+      <Drawer.Screen
+        name={MainStackEnum.CUSTOM_DRAWER_MENUS_STACK}
+        component={CustomDrawerMenusStack}
+        options={{
+          swipeEnabled: false,
+        }}
       />
     </Drawer.Navigator>
   );

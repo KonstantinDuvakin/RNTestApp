@@ -7,12 +7,12 @@ import {OnboardingsStackEnum} from '../../navigation/navigationConfig';
 
 const ITEM_DATA = [
   {
-    name: 'Onboarding Rakha Wibowo',
-    to: OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO,
+    name: 'Onboarding RW',
+    to: OnboardingsStackEnum.ONBOARDING_RW,
   },
   {
-    name: 'Onboarding Masking Wibowo',
-    to: OnboardingsStackEnum.ONBOARDING_MASKING_WIBOWO,
+    name: 'Onboarding Masking RW',
+    to: OnboardingsStackEnum.ONBOARDING_MASKING_RW,
   },
 ];
 

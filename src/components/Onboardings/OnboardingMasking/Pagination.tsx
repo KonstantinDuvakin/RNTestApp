@@ -1,6 +1,6 @@
 import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import {OnboardingData} from '../../../screens/OnboardingsStack/OnboardingMaskingWibowo';
+import {OnboardingData} from '../../../screens/OnboardingsStack/OnboardingMaskingRW.tsx';
 import {SharedValue} from 'react-native-reanimated';
 import {Dot} from './Dot';
 

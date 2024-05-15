@@ -1,4 +1,10 @@
-import {View, FlatList, TouchableOpacity} from 'react-native';
+import {
+  View,
+  FlatList,
+  TouchableOpacity,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
+} from 'react-native';
 import React, {RefObject, createRef, useRef} from 'react';
 import {SCREEN_WIDTH} from '../../config/constants';
 import {Tabs} from '../../components/TopTabs/AnimatedTopTabs/Tabs';
@@ -52,6 +58,10 @@ export default function AnimatedTopTabs() {
     flRef.current?.scrollToOffset({offset: itemIndex * SCREEN_WIDTH});
   };
 
+  const onScroll = ({nativeEvent}: NativeSyntheticEvent<NativeScrollEvent>) => {
+    scrollX.value = nativeEvent.contentOffset.x;
+  };
+
   return (
     <View>
       <FlatList
@@ -62,9 +72,7 @@ export default function AnimatedTopTabs() {
         pagingEnabled
         bounces={false}
         keyExtractor={item => String(item.id)}
-        onScroll={({nativeEvent}) => {
-          scrollX.value = nativeEvent.contentOffset.x;
-        }}
+        onScroll={onScroll}
       />
       <Tabs data={data} scrollX={scrollX} onPressTab={onPressTab} />
     </View>

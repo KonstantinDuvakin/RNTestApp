@@ -3,8 +3,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {OnboardingsStackEnum} from '../navigationConfig';
 import {OnboardingsStackParamsList} from '../types';
 import {Onboardings} from '../../screens/OnboardingsStack/Onboardings';
-import {OnboardingRakhaWibowo} from '../../screens/OnboardingsStack/OnboardingRakhaWibowo';
-import {OnboardingMaskingWibowo} from '../../screens/OnboardingsStack/OnboardingMaskingWibowo';
+import {OnboardingRW} from '../../screens/OnboardingsStack/OnboardingRW.tsx';
+import {OnboardingMaskingRW} from '../../screens/OnboardingsStack/OnboardingMaskingRW.tsx';
 
 const Stack = createNativeStackNavigator<OnboardingsStackParamsList>();
 
@@ -16,13 +16,13 @@ export const OnboardingsStack = () => {
         component={Onboardings}
       />
       <Stack.Screen
-        name={OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO}
-        component={OnboardingRakhaWibowo}
+        name={OnboardingsStackEnum.ONBOARDING_RW}
+        component={OnboardingRW}
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name={OnboardingsStackEnum.ONBOARDING_MASKING_WIBOWO}
-        component={OnboardingMaskingWibowo}
+        name={OnboardingsStackEnum.ONBOARDING_MASKING_RW}
+        component={OnboardingMaskingRW}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

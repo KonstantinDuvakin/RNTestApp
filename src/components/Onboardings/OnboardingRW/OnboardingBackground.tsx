@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRakhaWibowo';
+import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRW.tsx';
 import Animated, {
   SharedValue,
   interpolateColor,

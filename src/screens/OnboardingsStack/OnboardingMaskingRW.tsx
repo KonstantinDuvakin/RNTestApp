@@ -54,7 +54,7 @@ export const BTN_BOTTOM_DIST = 100;
 const wait = async (ms: number) =>
   new Promise(resolve => setTimeout(resolve, ms));
 
-export const OnboardingMaskingWibowo = () => {
+export const OnboardingMaskingRW = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [active, setActive] = useState(false);
   const [overlay, setOverlay] = useState<SkImage | null>(null);

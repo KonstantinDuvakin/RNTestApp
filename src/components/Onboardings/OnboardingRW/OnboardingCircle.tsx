@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRakhaWibowo';
+import {OnboardingDataType} from '../../../screens/OnboardingsStack/OnboardingRW.tsx';
 import Animated, {
   Extrapolation,
   SharedValue,

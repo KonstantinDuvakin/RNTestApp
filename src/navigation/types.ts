@@ -2,6 +2,7 @@ import {DrawerScreenProps} from '@react-navigation/drawer';
 import {
   BSStackEnum,
   CarouselsStackEnum,
+  CustomDrawerMenusStackEnum,
   DropdownsStackEnum,
   ListsStackEnum,
   MainStackEnum,
@@ -21,6 +22,7 @@ export type MainStackParamsList = {
   [MainStackEnum.CAROUSELS_STACK]: NavigatorScreenParams<CarouselsStackParamsList>;
   [MainStackEnum.ONBOARDINGS_STACK]: NavigatorScreenParams<OnboardingsStackParamsList>;
   [MainStackEnum.TOP_TABS_STACK]: NavigatorScreenParams<TopTabsStackParamsList>;
+  [MainStackEnum.CUSTOM_DRAWER_MENUS_STACK]: NavigatorScreenParams<CustomDrawerMenusParamsList>;
 };
 
 export type MainStackScreenProps<T extends keyof MainStackParamsList> =
@@ -72,8 +74,8 @@ export type CarouselsScreenProps<T extends keyof CarouselsStackParamsList> =
 
 export type OnboardingsStackParamsList = {
   [OnboardingsStackEnum.ONBOARDINGS]: undefined;
-  [OnboardingsStackEnum.ONBOARDING_RAKHA_WIBOWO]: undefined;
-  [OnboardingsStackEnum.ONBOARDING_MASKING_WIBOWO]: undefined;
+  [OnboardingsStackEnum.ONBOARDING_RW]: undefined;
+  [OnboardingsStackEnum.ONBOARDING_MASKING_RW]: undefined;
 };
 
 export type OnboardingsScreenProps<T extends keyof OnboardingsStackParamsList> =
@@ -92,6 +94,19 @@ export type TopTabsScreenProps<T extends keyof TopTabsStackParamsList> =
     NativeStackScreenProps<TopTabsStackParamsList, T>,
     MainStackScreenProps<keyof MainStackParamsList>
   >;
+
+export type CustomDrawerMenusParamsList = {
+  [CustomDrawerMenusStackEnum.CUSTOM_DRAWERS]: undefined;
+  [CustomDrawerMenusStackEnum.CUSTOM_DRAWER_RW]: undefined;
+  [CustomDrawerMenusStackEnum.CUSTOM_DRAWER_RW_CONTACTS]: undefined;
+};
+
+export type CustomDrawersScreenProps<
+  T extends keyof CustomDrawerMenusParamsList,
+> = CompositeScreenProps<
+  NativeStackScreenProps<CustomDrawerMenusParamsList, T>,
+  MainStackScreenProps<keyof MainStackParamsList>
+>;
 
 declare global {
   namespace ReactNavigation {

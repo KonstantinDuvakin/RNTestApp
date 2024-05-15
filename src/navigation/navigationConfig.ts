@@ -5,6 +5,7 @@ export enum MainStackEnum {
   CAROUSELS_STACK = 'CarouselsStack',
   ONBOARDINGS_STACK = 'OnboardingsStack',
   TOP_TABS_STACK = 'TopTabsStack',
+  CUSTOM_DRAWER_MENUS_STACK = 'CustomDrawerMenusStack',
 }
 
 export enum BSStackEnum {
@@ -29,11 +30,17 @@ export enum CarouselsStackEnum {
 
 export enum OnboardingsStackEnum {
   ONBOARDINGS = 'Onboardings',
-  ONBOARDING_RAKHA_WIBOWO = 'OnboardingRakhaWibowo',
-  ONBOARDING_MASKING_WIBOWO = 'OnboardingMaskingWibowo',
+  ONBOARDING_RW = 'OnboardingRW',
+  ONBOARDING_MASKING_RW = 'OnboardingMaskingRW',
 }
 
 export enum TopTabsStackEnum {
   TOP_TABS = 'TopTabs',
   ANIMATED_TOP_TABS = 'AnimatedTopTabs',
+}
+
+export enum CustomDrawerMenusStackEnum {
+  CUSTOM_DRAWERS = 'CustomDrawers',
+  CUSTOM_DRAWER_RW = 'CustomDrawerRW',
+  CUSTOM_DRAWER_RW_CONTACTS = 'CustomDrawerRWContacts',
 }

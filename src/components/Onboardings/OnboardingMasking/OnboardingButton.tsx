@@ -8,7 +8,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import {SCREEN_HEIGHT} from '../../../config/constants';
-import { BTN_BOTTOM_DIST, BTN_SIZE } from '../../../screens/OnboardingsStack/OnboardingMaskingWibowo';
+import { BTN_BOTTOM_DIST, BTN_SIZE } from '../../../screens/OnboardingsStack/OnboardingMaskingRW.tsx';
 
 type OnboardingButtonProps = {
   pressHandler: () => void;

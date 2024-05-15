@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
-import {OnboardingData} from '../../../screens/OnboardingsStack/OnboardingMaskingWibowo';
+import {OnboardingData} from '../../../screens/OnboardingsStack/OnboardingMaskingRW.tsx';
 import {SCREEN_HEIGHT, SCREEN_WIDTH} from '../../../config/constants';
 
 type OnboardingScreenProps = {
